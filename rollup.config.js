@@ -10,7 +10,7 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      file: `dist/${pkg.name}.js`,
+      file: `lib/${pkg.name}.js`,
       exports: 'named',
       format: 'cjs',
       indent: false,
@@ -26,7 +26,7 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      file: `dist/es/${pkg.name}.js`,
+      file: `lib/es/${pkg.name}.js`,
       format: 'es',
       indent: false,
     },
@@ -41,7 +41,7 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      file: `dist/es/${pkg.name}.mjs`,
+      file: `lib/es/${pkg.name}.mjs`,
       format: 'es',
       indent: false,
     },
@@ -68,7 +68,7 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      file: `dist/umd/${pkg.name}.js`,
+      file: `lib/umd/${pkg.name}.js`,
       format: 'umd',
       exports: 'named',
       name: `${pkg.libName}`,
@@ -89,7 +89,7 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      file: `dist/umd/${pkg.name}.min.js`,
+      file: `lib/umd/${pkg.name}.min.js`,
       format: 'umd',
       exports: 'named',
       name: `${pkg.libName}`,

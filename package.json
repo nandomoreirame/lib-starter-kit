@@ -1,7 +1,7 @@
 {
   "name": "starter-kit",
   "libName": "StarterKit",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "👉🏼 A starter kit for your new library, using rollup, mocha, chai and nyc",
   "main": "lib/starter-kit.js",
   "unpkg": "lib/umd/starter-kit.js",

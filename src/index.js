@@ -1,6 +1,6 @@
 /* eslint no-restricted-globals:0  */
 
-export const double = value => {
+export const double = (value = 0) => {
   try {
     if (Object.prototype.toString.call(value) !== '[object Number]') {
       throw new TypeError('not a number');

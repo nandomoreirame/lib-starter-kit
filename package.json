@@ -1,22 +1,29 @@
 {
   "name": "starter-kit",
   "libName": "StarterKit",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "👉🏼 A starter kit for your new library, using rollup, mocha, chai and nyc",
-  "main": "dist/starter-kit.js",
-  "unpkg": "dist/umd/starter-kit.js",
-  "module": "dist/es/starter-kit.js",
+  "main": "lib/starter-kit.js",
+  "unpkg": "lib/umd/starter-kit.js",
+  "module": "lib/es/starter-kit.js",
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint .",
-    "test": "jest --coverage --no-cache --env=node",
-    "test:watch": "yarn test -- --watch"
+    "jest": "jest --coverage --no-cache --env=node",
+    "test": "yarn lint && yarn jest",
+    "pub": "yarn test && npm publish --access=public",
+    "test:watch": "yarn jest -- --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nandomoreirame/lib-starter-kit.git"
   },
-  "keywords": [],
+  "keywords": [
+    "lib",
+    "starter",
+    "kit",
+    "starter-kit"
+  ],
   "author": "Fernando Moreira <nandomoreira.me@gmail.com>",
   "license": "MIT",
   "bugs": {

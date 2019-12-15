@@ -9,14 +9,21 @@
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint .",
-    "test": "jest --coverage --no-cache --env=node",
-    "test:watch": "yarn test -- --watch"
+    "jest": "jest --coverage --no-cache --env=node",
+    "test": "yarn lint && yarn jest",
+    "pub": "yarn test && npm publish --access=public",
+    "test:watch": "yarn jest -- --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nandomoreirame/lib-starter-kit.git"
   },
-  "keywords": [],
+  "keywords": [
+    "lib",
+    "starter",
+    "kit",
+    "starter-kit"
+  ],
   "author": "Fernando Moreira <nandomoreira.me@gmail.com>",
   "license": "MIT",
   "bugs": {
